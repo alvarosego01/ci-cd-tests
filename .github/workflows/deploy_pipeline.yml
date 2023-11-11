@@ -41,7 +41,7 @@ jobs:
           path: dist
 
   test:
-    needs: [lint, build]
+    needs: [linter, build]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
