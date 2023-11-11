@@ -1,4 +1,5 @@
-[![Deployment Pipeline](https://github.com/midudev/pokedex-for-ci/actions/workflows/pipeline.yml/badge.svg)](https://github.com/midudev/pokedex-for-ci/actions/workflows/pipeline.yml)
+
+[![.github/workflows/deploy_pipeline.yml](https://github.com/alvarosego01/ci-cd-tests/actions/workflows/deploy_pipeline.yml/badge.svg)](https://github.com/alvarosego01/ci-cd-tests/actions/workflows/deploy_pipeline.yml)
 
 # Full Stack open CI/CD
 
