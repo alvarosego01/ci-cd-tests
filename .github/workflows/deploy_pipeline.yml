@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: npm install --no-audit --no-fund --no-optional
+        run: npm ci
       - name: Linter
         run: npm run eslint
       # - name: Build
@@ -28,5 +28,5 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:e2e
-          start: npm run start-test
+          start: npm run dev
           wait-on: 'http://localhost:5000'
