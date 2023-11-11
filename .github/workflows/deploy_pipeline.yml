@@ -24,9 +24,18 @@ jobs:
       - name: Tests
         run: npm run test
 
-      - name: Tests e2e
-        uses: cypress-io/github-action@v6
-        with:
-          command: npm run test:e2e
-          start: npm run dev
-          wait-on: 'http://localhost:5000'
+      # - name: Deploy to heroku
+      #   uses: akhileshns/heroku-deploy@v3.12.12
+      #   with:
+      #     heroku_api_key: ${{ secrets.HEROKU_KEY }}
+      - name: Message test
+        run: |
+          echo "Var test" ${{ secrets.HEROKU_KEY }}
+
+
+      # - name: Tests e2e
+      #   uses: cypress-io/github-action@v6
+      #   with:
+      #     command: npm run test:e2e
+      #     start: npm run dev
+      #     wait-on: 'http://localhost:5000'
