@@ -8,7 +8,6 @@ on:
 
 
 jobs:
-
   avoid_reduncy:
     runs-on: ubuntu-latest
     steps:
